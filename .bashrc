@@ -13,3 +13,7 @@ colored_text()
 }
 
 PS1="$(colored_text sk 00 32):\w "
+if [[ "$TERM" == screen* ]]; then
+	PROMPT_COMMAND='printf "\033ksk:%s\033\\" "${PWD/#$HOME/~}"'
+fi
+
