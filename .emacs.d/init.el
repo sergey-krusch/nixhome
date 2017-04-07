@@ -6,7 +6,13 @@
  '(auto-save-file-name-transforms (quote ((".*" "~/.emacs.d/autosaves/\\1" t))))
  '(backup-directory-alist (quote ((".*" . "~/.emacs.d/backups/"))))
  '(package-selected-packages (quote (undo-tree nlinum monokai-theme smex))))
+
 (make-directory "~/.emacs.d/autosaves/" t)
+
+(setq package-archives '(
+  ("gnu" . "https://elpa.gnu.org/packages/")
+  ("marmalade" . "https://marmalade-repo.org/packages/")
+  ("melpa" . "https://melpa.org/packages/")))
 
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
@@ -14,10 +20,7 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(setq package-archives '(
-  ("gnu" . "https://elpa.gnu.org/packages/")
-  ("marmalade" . "https://marmalade-repo.org/packages/")
-  ("melpa" . "https://melpa.org/packages/")))
+(package-install-selected-packages)
 
 (defun kill-ring-save-keep-highlight (beg end)
   "Keep the region active after the kill"
@@ -44,6 +47,9 @@
 (global-set-key (kbd "<C-insert>") 'kill-ring-save-keep-highlight)
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "C-S-z") 'undo-tree-visualize)
+
+(menu-bar-mode -1)
+(tool-bar-mode -1)
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
