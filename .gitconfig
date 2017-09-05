@@ -1,0 +1,4 @@
+[include]
+	path = ~/.gitid
+[alias]
+	st = status -sb
