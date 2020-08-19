@@ -1,11 +1,25 @@
+Xft.rgba: rgb
+Xft.dpi: 150
+Xft.lcdfilter: lcddefault
+Xft.autohint: 0
+Xft.hinting: 1
+Xtf.hintstyle: hintfull
+Xft.anitalias: 1
+
+! ===== xterm stuff =====
 xterm*VT100.Translations: #override \
 	Ctrl ~Shift <Key>Tab: string(0x1b) string("[27;5;9~") \n\
 	Ctrl Shift <Key>Tab: string(0x1b) string("[27;6;9~") \n\
 	Ctrl ~Shift <Key>grave: string(0x1b) string("[27;5;96~") \n\
+	Ctrl Shift <Key>P: string(0x1b) string("[27;6;80~") \n\
 	Ctrl Shift <Key>T: string(0x1b) string("[27;6;84~")
 
+! Ctrl Shift <Key>P: string(0x1b) string("[80;5u") \n\
+
+XTerm*selectToClipboard: true
+
 xterm*faceName: DejaVu Sans Mono Book
-xterm*faceSize: 11
+xterm*faceSize: 12
 
 !Theme Nine
 xterm*background: rgb:1a/1a/1a
