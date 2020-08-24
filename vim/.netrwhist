@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/home/sergey/Trading/teatowel/opt/sw-proc/deploy'
+let g:netrw_dirhist_2='/home/sergey/Trading/teatowel/opt/sw-proc'
+let g:netrw_dirhist_1='/home/sergey/Trading/teatowel/opt'
+let g:netrw_dirhist_0='/home/sergey/Trading/teatowel'
+let g:netrw_dirhist_9='/home/sergey/Trading/teatowel/src'
+let g:netrw_dirhist_8='/home/sergey/Trading/teatowel'
+let g:netrw_dirhist_7='/home/sergey/Trading'
+let g:netrw_dirhist_6='/home/sergey'
+let g:netrw_dirhist_5='/home'
+let g:netrw_dirhist_4='/home/sergey'
